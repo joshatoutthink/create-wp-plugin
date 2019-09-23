@@ -1,5 +1,5 @@
 {
-  "name": "create-wp-plugin",
+  "name": "@joshkennedy00/create-wp-plugin",
   "version": "1.0.0",
   "main": "index.js",
   "bin": {

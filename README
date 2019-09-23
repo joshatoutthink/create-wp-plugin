@@ -1,0 +1,13 @@
+#DOCUMENTATION
+
+1.  run command create-wp-plugin
+```bash
+create-wp-plugin
+```
+
+2.  follow the prompts
+
+3.  run yarn or yarn init
+```bash
+yarn 
+```
