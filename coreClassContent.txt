@@ -7,7 +7,7 @@ if(!class_exists( '{{core_class}}' )){
     }
     public function enqueue_all(){
       wp_enqueue_scripts('main-script', {{plugin_name_allcaps}}_URL . '/scripts/main.js', array(), true);
-      wp_enqueue_styles('main-styles', {{plugin_name_allcaps}}_URL . '/styles/main.scss', '1.00' , all);
+      wp_enqueue_styles('main-styles', {{plugin_name_allcaps}}_URL . '/styles/main.css', '1.00' , all);
     }
   }
   $class = new {{core_class}}();

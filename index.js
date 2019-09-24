@@ -56,6 +56,7 @@ inquirer
           default: () => {
             const pluginName = answers.plugin_name;
             const nameSnakeCased = pluginName
+              .trim()
               .split(" ")
               .map(word =>
                 word

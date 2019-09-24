@@ -64,15 +64,24 @@ module.exports.scaffoldPlugin = function(answers) {
     .split("_")
     .join("-")
     .toLowerCase();
+
   // outcome: plugin-name
 
   answers.plugin_name_allcaps = answers.core_class.toUpperCase();
   //outcome: PLUGGIN_NAME
 
+  answers.plugin_name_kabobbed = answers.plugin_name
+    .trim()
+    .split(" ")
+    .join("-")
+    .toLowerCase();
+
+  // outcome: plugin-name
+
   copyAndEditFile(
     "coreFileContent.txt",
     makeObjIterable(answers),
-    `${answers.plugin_name}.php`
+    `${answers.plugin_name_kabobbed}.php`
   );
 
   //---------

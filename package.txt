@@ -1,5 +1,5 @@
 {
-  "name": "{{plugin_name}}",
+  "name": "{{plugin_name_kabobbed}}",
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
